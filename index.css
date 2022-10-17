@@ -1,0 +1,273 @@
+*{
+	box-sizing: border-box;
+}
+html{scroll-behavior: smooth;}
+
+a:hover{ color: violet }
+
+body{
+	font-family: sans-serif;
+	margin: 0;
+}
+
+
+h1{font-size: 3.5em; }
+h1{font-size: 2.7em; }
+h1{font-size: 2em; }
+p{font-size: 1.25em;}
+ul{list-style: none;}
+li{font-size: 1.25em;}
+
+button{
+	font-size: 1.5;
+	font-weight: bold;
+	padding: 10px 30px;
+	border-radius: 5px;
+	border: 2px solid black;
+	box-shadow: 2px 2px 10px black;
+	color: white;
+	background-color: purple;
+	
+}
+
+}
+
+
+
+.container{
+	max-width: 1400px;
+	margin: auto;
+ }
+
+ .color-acento{color: purple} 
+
+ header{
+ 	background-color: rgb(245,245,245)
+ }
+
+ header .logo {
+ 	margin: 0;
+ 	padding: 25px 30px;
+ 	font-weight: bold;
+ 	color: violet;
+ 	font-size: 1.6em;
+ }
+
+ header .container{
+ 	display: flex;
+ 	flex-direction: column;
+ 	align-items: center;
+
+ }
+
+ header nav{
+ 	display: flex;
+ 	flex-direction:  column;
+ 	align-items: center;
+ 	padding-bottom: 25px;
+ }
+
+ header a{
+ 	padding: 5px 12px;
+ 	text-decoration: none;
+ 	font-weight: bold;
+ 	color: black;
+}
+
+
+
+
+#hero{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	flex-direction: column;
+	height: 90vh;
+	color: white;
+	background: linear-gradient(0deg, black, transparent), url("media/eli6.gif");
+ 	background-repeat: no-repeat;
+ 	background-size: cover;
+ 	background-position: center center;
+}
+
+#hero h1{
+	color: white;
+}
+
+
+#mi-historia .container{
+	text-align: center;
+	padding: 200px 12px;
+	background: linear-gradient(0deg, black, transparent), url("media/eli5.jpg");
+	font-family: sans-serif;
+	
+
+	
+}
+#mi-historia p{
+	color: white;
+	text-shadow: white;
+
+}
+
+	
+
+}
+
+
+#mi-familia{
+	background-color: rgb(30,30,30);
+	color: white;
+	text-align: center;
+
+
+}
+#mi-familia .container{
+	padding: 100px 0px;
+	color: white;
+}
+
+#mi-familia h2{
+	margin-top: 0;
+	font-size: 2.2em;
+}
+
+#mi-familia p{
+	display: none;
+}
+
+
+#mi-familia .cartas{
+	
+	
+}
+
+.carta:first-child{
+	background-image: linear-gradient(0deg, black, transparent), url("media/papi1.jpg");
+	padding: 50px;
+	background-position: center center;
+	background-size: cover;
+	margin: 20px;
+	border-radius: 15px;
+}
+.carta:nth-child(2){
+	background-image: linear-gradient(0deg, black, transparent), url("media/mami1.jpg");
+	padding: 50px;
+	background-position: center center;
+	background-size: cover;
+	margin: 20px;
+	border-radius: 15px;
+}
+.carta:nth-child(3){
+	background-image: linear-gradient(0deg, black, transparent), url("media/fam1.jpg");
+	padding: 50px;
+	background-position: center center;
+	background-size: cover;
+	margin: 20px;
+	border-radius: 15px;
+}
+
+
+#caracteristicas .container{
+	text-align: center;
+	padding: 200px 12px;
+}
+#caracteristicas li{
+	margin: 16px 0px;
+	font-weight: bold;
+
+}
+
+#final{
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	color: white;
+	height: 80vh;
+
+}
+
+#final .container{
+	  
+	padding: 150px 0px;
+	background-image: linear-gradient(0deg, black, transparent), url("media/eli.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+#final h2{
+	font-size: 9vw;
+}
+#final button{
+	font-size: 5vw;
+}
+
+footer{
+	background-color: rgb(230,230,230);
+}
+footer p{
+	margin: 0;
+	padding: 12px;
+	color: rgb(100,100,100);
+
+}
+footer .container{
+	height: 150px;
+	display: flex;
+	justify-content: center;
+	align-items: flex-end;
+
+}
+
+button:hover{
+	background-color: violet;
+}
+
+@media (min-width: 540px){
+	header{
+		position: fixed;
+		width: 100%;
+	}
+
+
+	header .container{
+		flex-direction: row;
+		justify-content: space-between;
+
+	}
+	header nav{
+		flex-direction: row;
+		padding-bottom: 0;
+		padding-right: 20px;
+	}
+	#mi-historia .container{
+		display: flex;
+		justify-content: center;
+
+	}
+	#mi-historia .texto{
+		text-align: initial;
+		padding-left: 30%;
+		width: 50%;
+		padding:0px 30px;
+		max-width: 600px;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+
+	}
+	#mi-historia h2{
+		margin-top: 0%;
+	}
+	#mi-historia .img-container{
+		background-image: url("media/eli5.jpg");
+		background-size: cover;
+		background-position: center center;
+		height: 500px;
+		width: 400px;
+	}
+}
+
